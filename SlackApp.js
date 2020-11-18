@@ -15,7 +15,7 @@ app.listen(port);
 
 //---routing---//
 
-//add message
+//send message
 app.post('/send-message', async(req, res) => {
     try{
         
@@ -89,7 +89,6 @@ app.get('/search-message', async(req, res) => {
         if(!msg)
             return res.send({'status':'failed, messege is required'});
         Functions.searchMessage(msg).then(function(result){
-        console.log(result)
         if(!result.ok)
             return res.send({'status':result});
         let matches=Functions.resMatches(result.messages); 

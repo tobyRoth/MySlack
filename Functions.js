@@ -1,4 +1,5 @@
 //---functions---//
+
 //post message
 function sendMessage(channel,msg){
     return new Promise(function(resolve,reject){
@@ -6,9 +7,7 @@ function sendMessage(channel,msg){
          text:msg,
          channel:channel,
      }, function(err, response){
-         console.log("post!")
-         console.log(response);
-         resolve(response);
+            resolve(response);
      });
  });
  }
@@ -19,10 +18,7 @@ function sendMessage(channel,msg){
              token: apiToken,
              channel:id
          },function (err, response) {
-                     console.log("get!");
-                     console.log('response:');
-                     console.log(response.messages);
-                     resolve(response.messages)
+                resolve(response.messages)
          });
      });
  } 
@@ -32,8 +28,6 @@ function sendMessage(channel,msg){
          slack.api('conversations.list', {
              token: apiToken
          },function (err, response) {
-                 console.log('list:');
-                 console.log(response.ok);
                  resolve(response)
      });
  }))
@@ -45,13 +39,14 @@ function sendMessage(channel,msg){
           token:apiToken,
           query:msg
       }, function(err, response){
-          resolve(response);
+            resolve(response);
       });
   });
  }
  //---help functions to store response data---//
- let messagesList=[];
+ 
  //all messages
+ let messagesList=[];
  function resMessages(result){ 
      for(var i=0;i<result.length;i++){
          messagesList.push(
@@ -79,9 +74,9 @@ function sendMessage(channel,msg){
              )   
          }
         return conversations;
- }
- let matches=[];
+ } 
  //all matches messages to search
+ let matches=[];
  function resMatches(messages){
          console.log(messages.matches.length);
          for(var i=0;i<messages.matches.length;i++)
