@@ -5,7 +5,7 @@ MySlack is running on [Heroku](https://www.heroku.com/) server: https://slack-me
 [Send Message](https://github.com/tobyRoth/MySlack/blob/master/README.md#send-message)\
 [Get Messages](https://github.com/tobyRoth/MySlack/blob/master/README.md#get-messages) \
 [Search Mesage](https://github.com/tobyRoth/MySlack/blob/master/README.md#search-message) \
-[Get Channels]() 
+[Get Channels](https://github.com/tobyRoth/MySlack/blob/master/README.md#search-message) 
 
 
 ## So how to use MySlack? 
@@ -23,9 +23,9 @@ the scopes you need:
  ```groups:history```\
  ```groups:read``` \
  ```im:history``` \
- ```im:read``` \ 
- ```mpim:history``` \ 
- ```mpim:read``` \
+ ```im:read``` <br /> 
+ ```mpim:history``` <br /> 
+ ```mpim:read``` <br />
 ### User Token Scopes:
 ```chat:write``` \
 ```channels:history``` \
