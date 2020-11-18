@@ -13,33 +13,33 @@ serch for a specific message in all channels the api returns all messages that c
 ## So how to use MySlack? 
 
 ## Let's get started! 
-If you don't have a slack account yet so please create one [here](https://slack.com/intl/en-il/get-started#/createnew).
-Now in your slack account,if you don't have a slack app create one [here](https://api.slack.com/apps).
-To use all MySlack APIs you need to give a few scopes to slack app.
-to giva all needed scopes go to OAuth & Permissions of your app. 
-the scopes you need:
-Bot Token Scopes:
-```chat:write``` 
-```channels:history```
-```channels:read```
-```groups:history```
-```groups:read``` 
-```im:history```
-```im:read```  
-```mpim:history``` 
-```mpim:read```
-User Token Scopes:
-```chat:write```
-```channels:history``` 
-```channels:read```
-```groups:history```
-```groups:read``` 
-```im:history```   
-```im:read```  
-```mpim:history```
-```mpim:read```	 
-```search:read``` 
-Now that you have all scopes you need,and the app is installed keep the OAuth Access Token.
+##### If you don't have a slack account yet so please create one [here](https://slack.com/intl/en-il/get-started#/createnew).
+##### Now in your slack account,if you don't have a slack app create one [here](https://api.slack.com/apps).
+##### To use all MySlack APIs you need to give a few scopes to slack app.
+##### to giva all needed scopes go to OAuth & Permissions of your app. 
+##### the scopes you need:
+### Bot Token Scopes:
+##### ```chat:write``` 
+##### ```channels:history```
+##### ```channels:read```
+##### ```groups:history```
+##### ```groups:read``` 
+##### ```im:history```
+##### ```im:read```  
+##### ```mpim:history``` 
+##### ```mpim:read```
+### User Token Scopes:
+##### ```chat:write```
+##### ```channels:history``` 
+##### ```channels:read```
+##### ```groups:history```
+##### ```groups:read``` 
+##### ```im:history```   
+##### ```im:read```  
+##### ```mpim:history```
+##### ```mpim:read```	 
+##### ```search:read``` 
+#### Now that you have all scopes you need,and the app is installed keep the OAuth Access Token.
 
 ## To run the app
 
