@@ -2,10 +2,10 @@
 MySlack is an application that integrates to Slack services to sends messages and get messages without using the Slack App.\
 MySlack is running on [Heroku](https://www.heroku.com/) server: https://slack-me.herokuapp.com/
 #### MySlack includes the following APIs:
-Send Message \
-Get Messages \
-Search Mesage \
-Get Channels 
+[Send Message] \
+[Get Messages](https://github.com/tobyRoth/MySlack/blob/master/README.md#get-messages) \
+[Search Mesage] \
+[Get Channels] 
 
 
 ## So how to use MySlack? 
@@ -33,9 +33,9 @@ the scopes you need:
 ```groups:history``` \
 ```groups:read``` \
 ```im:history```  \
-```im:read```  <br />
-```mpim:history``` <br />
-```mpim:read```	 <br />
+```im:read```<br />
+```mpim:history```<br />
+```mpim:read```	<br />
 ```search:read``` 
 #### Now that you have all scopes you need,and the app is installed keep the OAuth Access Token.
 
@@ -67,7 +67,7 @@ search for a specific message in all channels. the API returns all messages that
 #### Method:GET
 #### URL: https://slack-me.herokuapp.com/search-message.
 #### Required Arguments :
-**token**:xoxp-your-token.\
+**token**:xoxp-your-token.<br />
 **msg**:the-message-you're-searching
 
 ### Get Channels:
