@@ -6,10 +6,11 @@
 send a message to a specific channel (in one of your slack accounts) the API requires a token to a slack app,a channel name and a message to send.
 ### get all messages:
 returns all messages from a specific channel (in one of your slack accounts) the API requires a token to a slack app and a channel id 
-### get all channels:
-if you don't know the name/id of the channel you need-this api returns a list of all chnnels name and id the API requires a token to a slack app
 ### serch a mesage:
-serch for a specific message in all channels the api returns all messages that contains the message you serched.the api requires a token to a slack app and a message.
+serch for a specific message in all channels. the API returns all messages that contains the message you serched.the api requires a token to a slack app and a message.
+### get all channels:
+if you don't know the name/id of the channel you need-this API returns a list of all chnnels name and id the API requires a token to a slack app
+
 
 ## So how to use MySlack? 
 
