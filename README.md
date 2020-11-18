@@ -4,7 +4,7 @@ MySlack is running on [Heroku](https://www.heroku.com/) server: https://slack-me
 #### MySlack includes the following APIs:
 [Send Message](https://github.com/tobyRoth/MySlack/blob/master/README.md#send-message)\
 [Get Messages](https://github.com/tobyRoth/MySlack/blob/master/README.md#get-messages) \
-[Search Mesage]() \
+[Search Mesage](https://github.com/tobyRoth/MySlack/blob/master/README.md#search-message) \
 [Get Channels]() 
 
 
