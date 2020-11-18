@@ -41,7 +41,7 @@ the scopes you need:
 
 ## To use the app 
 
-For convenient and easy communication We suggest to use [PostMan](https://www.postman.com/). if you don't have it yet, install [here](https://www.postman.com/downloads/)\
+For convenient and easy communication We suggest to use [PostMan](https://www.postman.com/). if you don't have it yet, install [here](https://www.postman.com/downloads/)
 
 ## APIs
 
@@ -51,7 +51,7 @@ send a message to a specific channel in one of your slack accounts. the API requ
 #### URL: https://slack-me.herokuapp.com/send-message
 #### Arguments-required:
 **token**:xoxp-your-token.\
-**channel**:channel name (if you don't know the name you can use Get Channels)
+**channel**:channel name (if you don't know the name you can use Get Channels) <br />
 **msg**:your message 
 
 ### Get Messages:
@@ -60,7 +60,7 @@ returns all messages from a specific channel in one of your slack accounts the A
 #### URL: https://slack-me.herokuapp.com/get-all-messages
 #### Required Arguments:
 **token**:xoxp-your-token.\ 
-**channel**:channel-id (if you don't know the id you can use Get Channels)\
+**channel**:channel-id (if you don't know the id you can use Get Channels)
 
 ### Search Message:
 search for a specific message in all channels. the API returns all messages that contains the message you serched. the api requires a token to a slack app and a message.
@@ -71,11 +71,11 @@ search for a specific message in all channels. the API returns all messages that
 **msg**:the-message-you're-searching
 
 ### Get Channels:
-the API returns a list of all Workspace's chnnels name and id. the API requires a token to a slack app. \
+the API returns a list of all Workspace's chnnels name and id. the API requires a token to a slack app. 
  
 #### Method:GET
 #### URL: https://slack-me.herokuapp.com/get-all-channels
 #### Required Arguments :
-**token**:xoxp-your-token.\
+**token**:xoxp-your-token.
 
 ### Good Luck and enjoy! 
