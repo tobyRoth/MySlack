@@ -1,6 +1,7 @@
 # MySlack
-### MySlack is an application that integrates to Slack services to sends messages and get messages without using the Slack App.
-### MySlack includes the following APIs:
+#### MySlack is an application that integrates to Slack services to sends messages and get messages without using the Slack App.
+#### MySlack is running on [Heroku](https://www.heroku.com/) server: https://slack-me.herokuapp.com/
+#### MySlack includes the following APIs:
 ### send a message:
 send a message to a specific channel (in one of your slack accounts) the API requires a token to a slack app,a channel name and a message to send.
 ### get all messages:
@@ -43,13 +44,13 @@ serch for a specific message in all channels the api returns all messages that c
 
 ## To run the app
 
-##### To run the app u need to use POSTMAN.if you don't have yet,install it [here](https://www.postman.com/downloads/)
-##### all required parameters for Api u will send through POSTMAN - params in the following way:
+##### To run the app u need to use [PostMan](https://www.postman.com/). if you don't have yet, install it [here](https://www.postman.com/downloads/)
+##### all required parameters for Api u will send through PostMan - params in the following way:
 ##### key:value
 
 ### To send a message:
 #### Method:POST
-#### URL:https://slack-me.herokuapp.com/send-message
+#### URL: https://slack-me.herokuapp.com/send-message
 #### Arguments-required:
 ##### token:xoxp-your-token.
 ##### channel:channel-name
@@ -60,7 +61,7 @@ serch for a specific message in all channels the api returns all messages that c
 
 ### To get all messages of a specific channel:
 #### Method:GET
-#### URL:https://slack-me.herokuapp.com/get-all-messages
+#### URL: https://slack-me.herokuapp.com/get-all-messages
 #### Arguments-required:
 ##### token:xoxp-your-token.
 ##### channel:channel-id
@@ -70,7 +71,7 @@ serch for a specific message in all channels the api returns all messages that c
 
 ### To search for a message in all channels:
 #### Method:GET
-#### URL:https://slack-me.herokuapp.com/search-message.
+#### URL: https://slack-me.herokuapp.com/search-message.
 #### Arguments-required:
 ##### token:xoxp-your-token.
 ##### msg:the-message-you're-searching 
@@ -80,7 +81,7 @@ serch for a specific message in all channels the api returns all messages that c
 
 ### To get all channels of your Workspace:
 #### Method:GET
-#### URL:https://slack-me.herokuapp.com/get-all-channels
+#### URL: https://slack-me.herokuapp.com/get-all-channels
 #### Arguments-required:
 ##### token:xoxp-your-token.
 
