@@ -3,7 +3,7 @@ const Functions = require('./Functions');
 const app = express();
 const path = require('path');
 
-app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static(path.join(__dirname, 'public')));
 
 var Slack = require('slack-node');
 
