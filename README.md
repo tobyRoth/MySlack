@@ -33,13 +33,13 @@ the scopes you need:
 ```groups:history``` \
 ```groups:read``` \
 ```im:history```  \
-```im:read```  \
-```mpim:history``` \
-```mpim:read```	 \
-```search:read``` \
+```im:read```  <br />
+```mpim:history``` <br />
+```mpim:read```	 <br />
+```search:read``` 
 #### Now that you have all scopes you need,and the app is installed keep the OAuth Access Token.
 
-## To use the app \
+## To use the app 
 
 For convenient and easy communication We suggest to use [PostMan](https://www.postman.com/). if you don't have it yet, install [here](https://www.postman.com/downloads/)\
 
