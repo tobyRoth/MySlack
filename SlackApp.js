@@ -16,7 +16,7 @@ app.listen(port);
 //---routing---//
 
 //add message
-app.post('/add-message', async(req, res) => {
+app.post('/send-message', async(req, res) => {
     try{
         
         apiToken =req.query.token;
@@ -29,7 +29,7 @@ app.post('/add-message', async(req, res) => {
         var msg=req.query.msg;
         if(!msg)
             return res.send({'status':'failed, messege is required'})
-        Functions.addMessage(channel,msg).then(function(result){
+        Functions.sendMessage(channel,msg).then(function(result){
             if(!result.ok)
                 return res.send({'status':result});
             res.send({"u just posted a message":result.message.text});
@@ -53,7 +53,7 @@ app.get('/get-all-messages', async(req, res) => {
             if(!result)
                 return res.send({'status':'failed, token or channel not found'});
             let messagesList=Functions.resMessages(result);
-            res.send({"all your messages":messagesList});
+            res.send({"messages":messagesList});
         });
     }
     catch(error){

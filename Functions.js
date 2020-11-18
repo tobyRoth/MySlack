@@ -1,6 +1,6 @@
 //---functions---//
 //post message
-function addMessage(channel,msg){
+function sendMessage(channel,msg){
     return new Promise(function(resolve,reject){
          slack.api('chat.postMessage', {
          text:msg,
@@ -97,4 +97,4 @@ function addMessage(channel,msg){
          }
          return matches;
  }
- module.exports = { addMessage,getAllMessages,getAllChannels,searchMessage,resMessages,resChannels,resMatches }
+ module.exports = { sendMessage,getAllMessages,getAllChannels,searchMessage,resMessages,resChannels,resMatches }
