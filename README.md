@@ -12,7 +12,7 @@ Get Channels
 
 ## Let's get started! 
 If you don't have a slack account yet, create one [here](https://slack.com/intl/en-il/get-started#/createnew).\
-Now in your slack account, if you don't have a slack app create one [here](https://api.slack.com/apps). \ 
+Now in your slack account, if you don't have a slack app create one [here](https://api.slack.com/apps).\ 
 To use all MySlack APIs you need to give a few scopes to slack app. \
 to giva all needed scopes go to OAuth & Permissions of your app. \
 the scopes you need:
