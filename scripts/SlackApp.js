@@ -15,8 +15,6 @@ app.listen(port);
 
 //---routing---//
 
-app.get('/', function(req, res){
-  });
 //add message
 app.post('/add-message', async(req, res) => {
     try{
