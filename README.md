@@ -2,10 +2,10 @@
 MySlack is an application that integrates to Slack services to sends messages and get messages without using the Slack App.\
 MySlack is running on [Heroku](https://www.heroku.com/) server: https://slack-me.herokuapp.com/
 #### MySlack includes the following APIs:
-[Send Message] \
+[Send Message](https://github.com/tobyRoth/MySlack/blob/master/README.md#send-message)\
 [Get Messages](https://github.com/tobyRoth/MySlack/blob/master/README.md#get-messages) \
-[Search Mesage] \
-[Get Channels] 
+[Search Mesage]() \
+[Get Channels]() 
 
 
 ## So how to use MySlack? 
