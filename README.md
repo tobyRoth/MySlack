@@ -26,6 +26,7 @@ the scopes you need:
  ```im:read``` <br /> 
  ```mpim:history``` <br /> 
  ```mpim:read``` <br />
+ ```search:read```
 ### User Token Scopes:
 ```chat:write``` \
 ```channels:history``` \
@@ -41,7 +42,7 @@ the scopes you need:
 
 ## To use the app 
 
-For convenient and easy communication We suggest to use [PostMan](https://www.postman.com/). if you don't have it yet, install [here](https://www.postman.com/downloads/)
+For convenient and easy communication We suggest to use [Postman](https://www.postman.com/). if you don't have it yet, install [here](https://www.postman.com/downloads/)
 
 ## APIs
 
@@ -49,7 +50,7 @@ For convenient and easy communication We suggest to use [PostMan](https://www.po
 send a message to a specific channel in one of your slack accounts. the API requires a token to a slack app , a channel name and a message to send.
 #### Method:POST
 #### URL: https://slack-me.herokuapp.com/send-message
-#### Arguments-required:
+#### Required Arguments:
 **token** : xoxp-your-token.\
 **channel** : channel name (if you don't know the name you can use [Get Channels](https://github.com/tobyRoth/MySlack/blob/master/README.md#search-message) ) <br />
 **msg** : your message 
