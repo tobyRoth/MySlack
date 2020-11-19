@@ -7,6 +7,9 @@ function sendMessage(channel,msg){
          text:msg,
          channel:channel,
      }, function(err, response){
+        if(err !=null) 
+            reject(err);
+        else
             resolve(response);
      });
  });
@@ -15,10 +18,13 @@ function sendMessage(channel,msg){
  function getAllMessages(id){
      return new Promise(function(resolve, reject){
          slack.api('conversations.history', {
-             token: apiToken,
-             channel:id
+            token: apiToken,
+            channel:id
          },function (err, response) {
-                resolve(response.messages)
+            if(err !=null) 
+                reject(err);
+            else
+                resolve(response);
          });
      });
  } 
@@ -26,19 +32,25 @@ function sendMessage(channel,msg){
  function getAllChannels(){
      return new Promise((function(resolve, reject){
          slack.api('conversations.list', {
-             token: apiToken
+            token: apiToken
          },function (err, response) {
-                 resolve(response)
+            if(err !=null) 
+                reject(err);
+            else
+                resolve(response);
      });
  }))
  }
  //serch massege
  function searchMessage(msg){
      return new Promise(function(resolve,reject){
-          slack.api('search.messages', {
-          token:apiToken,
-          query:msg
+        slack.api('search.messages', {
+        token:apiToken,
+        query:msg
       }, function(err, response){
+        if(err !=null) 
+            reject(err);
+        else
             resolve(response);
       });
   });
@@ -46,50 +58,34 @@ function sendMessage(channel,msg){
  //---help functions to store response data---//
  
  //all messages
- let messagesList=[];
- function resMessages(result){ 
-     for(var i=0;i<result.length;i++){
-         messagesList.push(
-             {
-                 'text':result[i].text,
-                 'user id':result[i].user,
-                 'time stamp':result[i].ts
-             }
-             );
-     }
-     return messagesList;
-         
+ function mapMessages(messages){ 
+    return messages.map(item =>  {
+        let message = {}
+        message['text'] = item.text
+        message['user id'] = item.user
+        message['time stamp']=item.ts
+        return message
+    });   
  } 
+ 
  //all channels
- let conversations=[];
- function resChannels(channels) {
-     
-     for(var i=0;i<channels.length;i++)
-         {
-             conversations.push(
-                 {
-                     'channel name':channels[i].name,
-                     'channel id':channels[i].id
-                 }
-             )   
-         }
-        return conversations;
+ function mapChannels(channels) {
+    return channels.map(item =>  {
+        let channel = {}
+        channel['channel name'] = item.name
+        channel['channel id'] = item.id
+        return channel
+    }); 
  } 
  //all matches messages to search
- let matches=[];
- function resMatches(messages){
-         console.log(messages.matches.length);
-         for(var i=0;i<messages.matches.length;i++)
-         {
-             matches.push(
-                 {
-                     'user name':messages.matches[i].username,
-                     'text':messages.matches[i].text,
-                     'perma link':messages.matches[i].permalink,
-                     'time stamp':messages.matches[i].ts
-                 }
-             )   
-         }
-         return matches;
- }
- module.exports = { sendMessage,getAllMessages,getAllChannels,searchMessage,resMessages,resChannels,resMatches }
+ function mapMatches(messages){
+    return messages.matches.map(item =>  {
+        let message = {}
+        message['user name']=item.username,
+        message['text'] =item.text,
+        message['perma link']=item.permalink,
+        message['time stamp']=item.ts
+        return message
+    });
+    }
+ module.exports = {sendMessage,getAllMessages,getAllChannels,searchMessage,mapMessages,mapMatches,mapChannels}
